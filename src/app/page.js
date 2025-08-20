@@ -3,7 +3,6 @@
 import { useEffect, useRef } from "react";
 import Image from "next/image";
 import styles from "./page.module.css";
-import forward from "../../public/icons/next.png";
 
 import gsap from "gsap";
 import Navbar from "./components/home_page/hero_section/navbar";
