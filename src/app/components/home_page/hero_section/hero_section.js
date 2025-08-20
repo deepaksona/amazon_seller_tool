@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import Image from "next/image";
 import gsap from "gsap";
+import forward from "../../../../../public/icons/next.png"
 import styles from "../../../page.module.css"
 
 export default function HeroSection() {
@@ -31,7 +32,7 @@ export default function HeroSection() {
       </div>
       <div className={styles.ctaButton}>
         Get Start{" "}
-        <Image src={forward} alt="forward" className={styles.forwardIcon} />
+        <Image  src="/icons/next.png" alt="forward" className={styles.forwardIcon}  width={15} height={15}/>
       </div>
     </div>
   );
