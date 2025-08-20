@@ -3,7 +3,6 @@
 import { useEffect, useRef } from "react";
 import Image from "next/image";
 import gsap from "gsap";
-import forward from "../../../../../public/icons/next.png"
 import styles from "../../../page.module.css"
 
 export default function HeroSection() {
