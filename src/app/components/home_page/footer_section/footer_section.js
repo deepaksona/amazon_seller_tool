@@ -12,14 +12,14 @@ export default function Footer() {
         <div className={styles.footerBrand}>
           <Image
             src="/logo.png"
-            alt="Brand Logo"
+            alt="LemonLayer Logo"
             width={150}
             height={50}
             className={styles.footerLogo}
           />
           <p>
-            Merchanspring helps sellers scale across marketplaces with secure
-            integrations, real-time analytics, and powerful automation.
+            LemonLayer helps businesses grow smarter with automation, real-time
+            analytics, and seamless marketplace integrations.
           </p>
         </div>
 
@@ -47,7 +47,7 @@ export default function Footer() {
         {/* Contact */}
         <div className={styles.footerContact}>
           <h4>Contact Us</h4>
-          <p>Email: support@lemonlayer.in</p>
+          <p>Email: support@lemonlayer.io</p>
           <p>Phone: +91 98765 43210</p>
           <div className={styles.footerSocials}>
             <a href="#"><Facebook size={20} /></a>
@@ -59,7 +59,7 @@ export default function Footer() {
       </div>
 
       <div className={styles.footerBottom}>
-        <p>© {new Date().getFullYear()} Merchanspring. All rights reserved.</p>
+        <p>© {new Date().getFullYear()} LemonLayer. All rights reserved.</p>
       </div>
     </footer>
   );

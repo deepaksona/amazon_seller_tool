@@ -154,7 +154,9 @@ background-position-y: 10px;
         color: white;
         border-radius: 300px;
         display: flex;
-        width: 120px;
+        max-width: 130px;
+        min-width: 130px;
+        
         font-size: 18px;
         font-weight: 500;
         align-items: center;
