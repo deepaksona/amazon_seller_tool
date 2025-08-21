@@ -122,13 +122,7 @@ export default function WhyChooseUs() {
 
         {/* ✅ Animate lottie */}
 
-        <Image
-         src={"/images/whychooseus.jpg"}
-         alt="team"
-         width={400}
-         height={400}
-         className={styles.wchAnimation}
-        ></Image>
+        <div className={styles.wchAnimation}></div>
         {/* <lottie-player
           ref={lottieRef}
           src="/lotties/sales.json"

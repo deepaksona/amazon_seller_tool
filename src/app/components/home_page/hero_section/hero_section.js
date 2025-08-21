@@ -32,7 +32,7 @@ export default function HeroSection() {
         Start Your Free Trial Today – Transform Your Amazon Business
       </div>
       <div className={styles.ctaButton}>
-        Get Start{" "}
+        Get Started{" "}
         <Image
           src="/icons/next.png"
           alt="forward"

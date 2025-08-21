@@ -196,7 +196,9 @@ background-position-y: 10px;
     height: 30vh;
     justify-content: center;
     width: auto;
-    background-color: rgba(255, 255, 255, 0.629);
+
+     background: linear-gradient(to top, rgba(255, 255, 255, 0.569), #61a3e1);
+    /* background-color: rgba(255, 255, 255, 0.629); */
     display: flex;
 
     .workItemWrapper {
@@ -215,8 +217,8 @@ background-position-y: 10px;
 
 
         p {
-          font-size: 14px;
-          color: black;
+          font-size: 16px;
+          color: white;
           font-weight: 500;
           margin-top: 10px;
           text-align: start;
@@ -239,9 +241,12 @@ background-position-y: 10px;
     justify-content: center;
     width: auto;
     background-color: whitesmoke;
+     background-image: url("/images/featurebg.png");
+     background-size: contain;
     box-sizing: border-box;
     padding-top: 5%;
     padding-bottom: 5%;
+   
 
     .featureHeading {
 
@@ -275,7 +280,7 @@ background-position-y: 10px;
         gap: 20px;
         width: 340px;
         border-radius: 20px;
-        background: linear-gradient(to bottom, rgba(0, 0, 255, 0.39), #61a3e1);
+        background: linear-gradient(to bottom, rgba(0, 0, 255, 0.556), #61a3e1);
         /* background: linear-gradient(to bottom, rgba(0, 0, 255, 0.233), #61a3e1); */
 
         .featureImage {
@@ -425,7 +430,9 @@ background-repeat: 2;
   height: fit-content;
   width: auto;
   background-color: whitesmoke;
-  padding: 40px 5%;
+  padding: 60px 5%;
+  background-image: url("/images/featurebg.png");
+  background-size: contain;
 
   .wchHeading {
     margin-bottom: 60px;
@@ -456,8 +463,8 @@ background-repeat: 2;
       line-height: 1.6;
 
       .wchDetailsText {
-        font-size: 22px;
-        max-width: 80%;
+        font-size: 20px;
+        max-width: 90%;
         font-family: "Poppins", sans-serif;
         font-weight: 600;
         color: black;
@@ -503,8 +510,10 @@ background-repeat: 2;
     
      box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.307);
      border-radius: 40px;
-      width: 450px;
+      width: 500px;
       box-sizing: border-box;
+      background-image: url("/images/whychooseus.jpg ");
+      background-size: cover;
       height: 450px;
 
      
@@ -530,9 +539,8 @@ background-repeat: 2;
       }
 
       .wchAnimation {
-         height: 300px;
-        width: 300px;
-       
+        max-width: 280px;
+        height: 280px;
       }
     }
   }
@@ -540,16 +548,22 @@ background-repeat: 2;
 
 
 .testimonialsSection {
+
   padding: 80px 20px;
+ /* background: linear-gradient(to bottom, #0000ff5e, #61a3e1),;  */
+ background-image:linear-gradient(to bottom, #0000ff5e, #61a3e1), url("/images/testbg2.png");
+ background-size: contain;
+
+  /* background-color:  linear-gradient(to bottom, #0000ff96, #61a3e1),; */
   /* background: linear-gradient(135deg, #f0f4ff, #e8f0ff); */
-  background-color: whitesmoke;
+
   text-align: center;
 
   .testimonialHeading {
     font-size: 2.2rem;
     font-weight: 700;
     margin-bottom: 50px;
-    color: #111827;
+    color: white;
     font-family: "Poppins", sans-serif;
   }
 
@@ -572,24 +586,29 @@ background-repeat: 2;
 
   .testimonialImage {
     border-radius: 50%;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    object-fit: cover;
+    
   }
 
   .testimonialFeedback {
     font-size: 1.1rem;
     color: #374151;
     line-height: 1.6;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    font-family: 'Poppins' sans-serif;
     font-style: italic;
   }
 
   .testimonialName {
     font-size: 1.2rem;
+     font-family: 'Poppins' sans-serif;
     font-weight: 600;
     color: #111827;
   }
 
   .testimonialRole {
+     font-family: 'Poppins' sans-serif;
     font-size: 0.95rem;
     color: #6b7280;
   }
@@ -606,6 +625,107 @@ background-repeat: 2;
 }
 
 
+.footer {
+ background-image: linear-gradient(to top, rgba(255, 255, 255, 0.058), #61a3e1), url("/images/testbg2.png");
+ background-size: contain;
+  color: #e2e8f0;
+  padding: 60px 20px 30px;
+
+  .footerContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .footerBrand {
+    p {
+      margin-top: 15px;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: white;
+    }
+  }
+
+  .footerLinks {
+    h4 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 15px;
+      color:white;
+      font-family: 'Poppins' sans-serif;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+
+      li {
+        margin-bottom: 10px;
+        font-size: 0.95rem;
+        font-family: 'Poppins' sans-serif;
+        color:white;
+
+        cursor: pointer;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+
+  .footerContact {
+    h4 {
+      font-size: 1.1rem;
+      font-weight: 600;
+      color:white;
+       font-family: 'Poppins' sans-serif;
+      margin-bottom: 15px;
+    }
+
+    p {
+      margin-bottom: 8px;
+      font-size: 0.95rem;
+      color:white;
+       font-family: 'Poppins' sans-serif;
+    }
+  }
+
+  .footerSocials {
+    margin-top: 15px;
+    display: flex;
+    gap: 12px;
+    
+
+    a {
+      color:white;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #ffffff;
+      }
+    }
+  }
+
+  .footerBottom {
+    margin-top: 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+    text-align: center;
+    
+
+    p {
+      font-size: 1.0rem;
+      color: white;
+      font-weight: 600;
+      filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.191));
+      font-family: 'Poppins' sans-serif;
+    }
+  }
+}
 
 
 

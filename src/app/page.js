@@ -13,6 +13,7 @@ import FeatureSection from "./components/home_page/feature_section/feature_secti
 import SmartWaySection from "./components/home_page/smartway_section/smartway_section";
 import WhyChooseUs from "./components/home_page/whychoosus/whychoosus";
 import TestimonialsSection from "./components/home_page/testimonial_section/testimonial_section";
+import Footer from "./components/home_page/footer_section/footer_section";
 
 export default function Home() {
     
@@ -31,6 +32,7 @@ export default function Home() {
       <SmartWaySection/>
       <WhyChooseUs/>
       <TestimonialsSection/>
+      <Footer/>
     </div>
   );
 }

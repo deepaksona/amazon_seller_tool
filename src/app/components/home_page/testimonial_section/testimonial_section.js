@@ -8,29 +8,30 @@ import styles from "../../../page.module.css";
 import Image from "next/image";
 
 export default function TestimonialsSection() {
-  const testimonials = [
-    {
-      name: "Amit Sharma",
-      role: "Amazon Seller",
-      feedback:
-        "This platform has completely changed how I manage my business. Real-time inventory sync saved me from countless overselling issues!",
-      image: "/images/people.jpg",
-    },
-    {
-      name: "Priya Mehta",
-      role: "Shopify & Flipkart Seller",
-      feedback:
-        "Finally, one dashboard that shows me profits after all fees and ads. It’s like having a full finance team in one tool!",
-      image: "/images/people.jpg",
-    },
-    {
-      name: "Rohit Verma",
-      role: "eBay Power Seller",
-      feedback:
-        "Managing 5000+ SKUs was impossible before. Now I can track everything easily. Plus, the automation saves me 3+ hours daily.",
-      image: "/images/people.jpg",
-    },
-  ];
+const testimonials = [
+  {
+    name: "John Miller",
+    role: "Amazon Seller",
+    feedback:
+      "This platform has completely changed how I manage my business. Real-time inventory sync saved me from countless overselling issues!",
+    image: "/images/people1.jpg",
+  },
+  {
+    name: "Sophia Williams",
+    role: "Amazon Seller",
+    feedback:
+      "Finally, one dashboard that shows me profits after all fees and ads. It’s like having a full finance team in one tool!",
+    image: "/images/people3.jpg",
+  },
+  {
+    name: "David Johnson",
+    role: "Amazon Seller",
+    feedback:
+      "Managing 5000+ SKUs was impossible before. Now I can track everything easily. Plus, the automation saves me 3+ hours daily.",
+    image: "/images/people2.jpg",
+  },
+];
+
 
   return (
     <div className={styles.testimonialsSection}>
@@ -52,6 +53,7 @@ export default function TestimonialsSection() {
                 alt={t.name}
                 width={100}
                 height={100}
+                fill={false}
               
                 className={styles.testimonialImage}
               />

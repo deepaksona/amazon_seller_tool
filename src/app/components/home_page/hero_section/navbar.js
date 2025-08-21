@@ -22,7 +22,7 @@ export default function Navbar() {
           </a>
         ))}
         <div className={styles.login}>Login</div>
-        <div className={styles.getStart}>Get Start</div>
+        <div className={styles.getStart}>Get Started</div>
       </div>
     </div>
   );
