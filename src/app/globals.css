@@ -2,7 +2,10 @@ html, body {
   margin: 0;
 
   padding: 0;
-   background: linear-gradient(to bottom, #0000ff74, #61a3e1);
+  /* background-color: whitesmoke; */
+   background: linear-gradient(to bottom, #0000ff74, #61a3e1); 
+
+   
   
   font-family: sans-serif;
 }

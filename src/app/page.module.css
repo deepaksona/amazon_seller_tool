@@ -7,11 +7,16 @@
   height: fit-content;
   display: flex;
   flex-direction: column;
-  /* background: linear-gradient(to top, rgba(0, 0, 255, 0.597), #61a3e1); */
-  /* background: linear-gradient(to bottom, #0000ff98, #61a3e1); */
-background-color: transparent;
+  /* background: linear-gradient(to top, rgba(0, 0, 255, 0.597), #61a3e1);*/
+
+
+
+
+
+box-sizing: border-box;
 
   .navbar {
+
     padding-left: 30px;
     padding-right: 30px;
     box-sizing: border-box;
@@ -88,13 +93,23 @@ background-color: transparent;
 
 
   .heroSection {
-    position: relative;
+     background-image: linear-gradient(to bottom, #0000ff32, #61a3e1),  /* 50% opacity black overlay */
+  url("/images/bgforhero.png");
+
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+background-position-y: 10px;
+
+
     justify-content: space-between;
+    align-items: center;
     height: 90vh;
     box-sizing: border-box;
-    padding: 0 100px;
+    padding: 0 70px;
     display: flex;
     align-items: center;
+    
 
     .headingAndDescription {
 
@@ -108,7 +123,7 @@ background-color: transparent;
 
 
       .heroHeading {
-        font-size: 35px;
+        font-size: 30px;
         font-weight: bold;
         color: white;
         font-family: "Protest Strike", sans-serif;
@@ -161,17 +176,18 @@ background-color: transparent;
 
 
     }
-
-    .heroAnimation {
-      position: absolute;
-      right: 200px;
-      height: 300px;
-      width: 300px;
+      .heroAnimation {
+     
+      height: 410px;
+      width: auto;
       filter: drop-shadow(2px 2px 5px rgba(255, 255, 255, 0.227));
-      transform: scale(1.7);
+      margin-bottom: 50px;
+   
 
 
     }
+
+  
 
 
   }
@@ -293,6 +309,13 @@ background-color: transparent;
     padding: 80px 20px;
     /* background: whitesmoke; */
     background: linear-gradient(to bottom, #0000ff1e, #61a3e1);
+
+    background-image:
+  url("/images/bgforsmartway.png");
+  background-size: contain;
+background-repeat: 2;
+
+
     text-align: center;
 
     .smartwaySubheading {
@@ -513,6 +536,74 @@ background-color: transparent;
     }
   }
 }
+
+
+.testimonialsSection {
+  padding: 80px 20px;
+  /* background: linear-gradient(135deg, #f0f4ff, #e8f0ff); */
+  background-color: whitesmoke;
+  text-align: center;
+
+  .testimonialHeading {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: #111827;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .testimonialCard {
+    max-width: 700px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+  }
+
+  .testimonialCard:hover {
+    transform: translateY(-5px);
+  }
+
+  .testimonialImage {
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+
+  .testimonialFeedback {
+    font-size: 1.1rem;
+    color: #374151;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-style: italic;
+  }
+
+  .testimonialName {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #111827;
+  }
+
+  .testimonialRole {
+    font-size: 0.95rem;
+    color: #6b7280;
+  }
+}
+
+.swiper-pagination-bullet {
+  background: #2563eb !important;
+  opacity: 0.7;
+}
+
+.swiper-pagination-bullet-active {
+  background: #1d4ed8 !important;
+  opacity: 1;
+}
+
 
 
 

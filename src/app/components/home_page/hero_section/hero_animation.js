@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import styles from "../../../page.module.css";
 
+
 export default function HeroAnimation() {
   const lottieRef = useRef(null);
 
@@ -16,14 +17,17 @@ export default function HeroAnimation() {
   }, []);
 
   return (
-    <lottie-player
-      ref={lottieRef}
-      src="/lotties/growth.json"
-      background="transparent"
-      speed="1"
-      className={styles.heroAnimation}
-      loop
-      autoplay
-    ></lottie-player>
+    <img
+    ref={lottieRef}
+    src="/images/laptoprmbg.png" className={styles.heroAnimation}></img>
+    // <lottie-player
+    //   ref={lottieRef}
+    //   src="/lotties/growth.json"
+    //   background="transparent"
+    //   speed="1"
+    //   className={styles.heroAnimation}
+    //   loop
+    //   autoplay
+    // ></lottie-player>
   );
 }

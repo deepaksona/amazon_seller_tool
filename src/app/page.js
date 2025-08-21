@@ -12,6 +12,7 @@ import Howitswork from "./components/home_page/how_its_work_section/how_its_work
 import FeatureSection from "./components/home_page/feature_section/feature_section";
 import SmartWaySection from "./components/home_page/smartway_section/smartway_section";
 import WhyChooseUs from "./components/home_page/whychoosus/whychoosus";
+import TestimonialsSection from "./components/home_page/testimonial_section/testimonial_section";
 
 export default function Home() {
     
@@ -29,6 +30,7 @@ export default function Home() {
       <FeatureSection/>
       <SmartWaySection/>
       <WhyChooseUs/>
+      <TestimonialsSection/>
     </div>
   );
 }
