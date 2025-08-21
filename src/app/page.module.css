@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Strike&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
 
 .page {
 
@@ -13,7 +14,7 @@
 
 
 
-box-sizing: border-box;
+  box-sizing: border-box;
 
   .navbar {
 
@@ -22,16 +23,20 @@ box-sizing: border-box;
     box-sizing: border-box;
     margin-top: 20px;
 
+
     width: 100%;
     justify-content: space-between;
-    align-items: center;
+
+    align-items: start;
     display: flex;
+ 
+    gap: 30px;
 
 
     .logo {
 
       font-size: 30px;
-      font-family: "Protest Strike", sans-serif;
+      font-family: "Protest Strike", ;
       font-weight: bolder;
       color: white;
 
@@ -47,7 +52,7 @@ box-sizing: border-box;
         color: white;
         text-decoration: none;
         font-weight: 500;
-        font-family: "Poppins", sans-serif;
+        font-family: "Cormorant Garamond", serif ;    font-style: italic;
       }
 
       .getStart {
@@ -59,7 +64,7 @@ box-sizing: border-box;
         display: flex;
         align-items: center;
         justify-content: center;
-        font-family: "Poppins", sans-serif;
+        font-family: "Cormorant Garamond", serif ;    font-style: italic;
         box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.317);
         background-color: #6ba32d;
       }
@@ -77,7 +82,7 @@ box-sizing: border-box;
         /* justify-content: center; */
         color: white;
 
-        font-family: "Poppins", sans-serif;
+        font-family: "Cormorant Garamond", serif ;    font-style: italic;
         background-color: transparent;
       }
     }
@@ -93,13 +98,14 @@ box-sizing: border-box;
 
 
   .heroSection {
-     background-image: linear-gradient(to bottom, #0000ff32, #61a3e1),  /* 50% opacity black overlay */
-  url("/images/bgforhero.png");
+    background-image: linear-gradient(to bottom, #0000ff32, #61a3e1),
+      /* 50% opacity black overlay */
+      url("/images/bgforhero.png");
 
-background-size: cover;
-background-repeat: no-repeat;
-background-position: center;
-background-position-y: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 10px;
 
 
     justify-content: space-between;
@@ -109,7 +115,7 @@ background-position-y: 10px;
     padding: 0 70px;
     display: flex;
     align-items: center;
-    
+
 
     .headingAndDescription {
 
@@ -126,8 +132,7 @@ background-position-y: 10px;
         font-size: 30px;
         font-weight: bold;
         color: white;
-        font-family: "Protest Strike", sans-serif;
-
+        font-family: "Cormorant Garamond", serif ;    font-style: italic;
 
       }
 
@@ -136,6 +141,7 @@ background-position-y: 10px;
         font-weight: bold;
         color: white;
         width: 600px;
+         font-family: "Cormorant Garamond", serif ;    font-style: italic;
 
       }
 
@@ -144,6 +150,7 @@ background-position-y: 10px;
         font-weight: bold;
         color: white;
         width: 600px;
+         font-family: "Cormorant Garamond", serif ;    font-style: italic;
 
       }
 
@@ -156,12 +163,12 @@ background-position-y: 10px;
         display: flex;
         max-width: 130px;
         min-width: 130px;
-        
+
         font-size: 18px;
         font-weight: 500;
         align-items: center;
         justify-content: center;
-        font-family: "Poppins", sans-serif;
+        font-family: "Cormorant Garamond", serif ;    font-style: italic;
         box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.227);
         background-color: #6ba32d;
         gap: 5px;
@@ -178,18 +185,19 @@ background-position-y: 10px;
 
 
     }
-      .heroAnimation {
-     
+
+    .heroAnimation {
+
       height: 410px;
       width: auto;
       filter: drop-shadow(2px 2px 5px rgba(255, 255, 255, 0.227));
       margin-bottom: 50px;
-   
+
 
 
     }
 
-  
+
 
 
   }
@@ -199,7 +207,7 @@ background-position-y: 10px;
     justify-content: center;
     width: auto;
 
-     background: linear-gradient(to top, rgba(255, 255, 255, 0.569), #61a3e1);
+    background: linear-gradient(to top, rgba(255, 255, 255, 0.569), #61a3e1);
     /* background-color: rgba(255, 255, 255, 0.629); */
     display: flex;
 
@@ -224,6 +232,7 @@ background-position-y: 10px;
           font-weight: 500;
           margin-top: 10px;
           text-align: start;
+           font-family: "Cormorant Garamond", serif ;    font-style: italic;
         }
       }
 
@@ -243,19 +252,19 @@ background-position-y: 10px;
     justify-content: center;
     width: auto;
     background-color: whitesmoke;
-     background-image: url("/images/featurebg.png");
-     background-size: contain;
+    background-image: url("/images/featurebg.png");
+    background-size: contain;
     box-sizing: border-box;
     padding-top: 5%;
     padding-bottom: 5%;
-   
+
 
     .featureHeading {
 
       margin-bottom: 100px;
       font-size: 40px;
       text-align: center;
-      font-family: "Poppins", sans-serif;
+      font-family: "Cormorant Garamond", serif ;  font-style: italic;
       font-weight: bolder;
     }
 
@@ -295,7 +304,7 @@ background-position-y: 10px;
           font-weight: 800;
           text-align: center;
           color: white;
-          font-family: "Poppins" sans-serif;
+          font-family: "Cormorant Garamond";
         }
 
         .featureDescription {
@@ -303,7 +312,7 @@ background-position-y: 10px;
           font-weight: 400;
           text-align: center;
           color: white;
-          font-family: "Poppins" sans-serif;
+          font-family: "Cormorant Garamond";
 
         }
       }
@@ -318,9 +327,9 @@ background-position-y: 10px;
     background: linear-gradient(to bottom, #0000ff1e, #61a3e1);
 
     background-image:
-  url("/images/bgforsmartway.png");
-  background-size: contain;
-background-repeat: 2;
+      url("/images/bgforsmartway.png");
+    background-size: contain;
+    background-repeat: 2;
 
 
     text-align: center;
@@ -329,7 +338,7 @@ background-repeat: 2;
       margin-bottom: 50px;
       font-size: 50px;
       text-align: center;
-      font-family: "Poppins", sans-serif;
+      font-family: "Cormorant Garamond", serif ;  font-style: italic;
       font-weight: bolder;
       color: white;
     }
@@ -341,7 +350,8 @@ background-repeat: 2;
       font-weight: 600;
       color: white;
       line-height: 1.6;
-      font-family: 'Poppins' sans-serif;
+      font-family: 'Cormorant Garamond';
+       font-style: italic;
     }
 
     /* Timeline wrapper */
@@ -370,44 +380,73 @@ background-repeat: 2;
 
         .benefitCard {
           display: flex;
-          flex-direction: column;
-          justify-content: center;
+          flex-direction: row;
           align-items: center;
-          width: 700px;
-          background-color: rgba(255, 255, 255, 0.792);
-          border: 1px solid rgba(0, 0, 0, 0.05);
-          border-radius: 16px;
-          padding: 24px;
-          backdrop-filter: blur(10px);
-          -webkit-backdrop-filter: blur(10px);
-          box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
-          transition: transform 0.3s ease, box-shadow 0.3s ease;
+          border-radius: 20px;
+          box-sizing: border-box;
+          padding: 20px 20px;
+          border:  1px solid rgba(255, 255, 255, 0.401);
 
-          &:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
-          }
+          .benefitDetail {
+            max-width: 70%;
+            justify-content: center;
+            align-items: end;
+            display: flex;
+            flex-direction: column;
+            background-color: transparent; 
+            /* background-color: rgba(255, 255, 255, 0.792); */
 
-          .benefitIcon {
-            margin-bottom: 12px;
-            height: 90px;
-            width: 90px;
-          }
+            border-radius: 16px;
+            padding: 24px;
+            /* backdrop-filter: blur(10px); */
+            /* -webkit-backdrop-filter: blur(10px);
+          box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08); */
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            
+            &:nth-child(even){
+               align-items: start;
+            }
+            
 
-          .benefitTitle {
-            font-size: 25px;
-            font-weight: 600;
-            margin-bottom: 8px;
-            color: #111827;
-            font-family: 'Poppins' sans-serif;
-          }
+          
 
-          .benefitDesc {
-            font-size: 18px;
-            color: #374151;
-            line-height: 1.5;
-            font-family: 'Poppins' sans-serif;
+            .benefitTitle {
+              font-size: 30px;
+              font-weight: 800;
+              margin-bottom: 8px;
+              color: white;
+              /* color: #111827; */
+              font-family: 'Cormorant Garamond';
+               font-style: italic;
+              text-align: left;
+                 &:nth-child(even){
+               text-align: right;
+            }
+            }
+
+            .benefitDesc {
+              font-size: 24px;
+              font-weight: 600;
+              color: white;
+              /* color: #374151; */
+              line-height: 1.5;
+              font-family: 'Cormorant Garamond';
+              font-style: italic;
+               text-align: right;
+                 &:nth-child(even){
+               text-align: left;
+            }
+
+            }
           }
+            .benefitIcon {
+              margin-bottom: 12px;
+              height: 330px;
+              width: 330px;
+              object-fit: cover;
+              border-radius: 20px;
+            }
+
         }
       }
     }
@@ -428,248 +467,296 @@ background-repeat: 2;
   }
 
 
-.whyChooseUs {
-  height: fit-content;
-  width: auto;
-  background-color: whitesmoke;
-  padding: 60px 5%;
-  background-image: url("/images/featurebg.png");
-  background-size: contain;
-
-  .wchHeading {
-    margin-bottom: 60px;
-    font-size: 36px;
-    text-align: center;
-    font-family: "Poppins", sans-serif;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-    color: #222;
-  }
-
-  /* ✅ side-by-side text + animation */
-  .wchDetailAndAnimation {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 50px;
-    width: auto;
-    margin: 0 auto;
-    box-sizing: border-box;
-
-    .wchDetails {
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      box-sizing: border-box;
-      gap: 20px;
-      line-height: 1.6;
-
-      .wchDetailsText {
-        font-size: 20px;
-        max-width: 90%;
-        font-family: "Poppins", sans-serif;
-        font-weight: 600;
-        color: black;
-      }
-
-      .wchList {
-        margin-top: 10px;
-        display: flex;
-        flex-direction: column;
-        gap: 14px;
-        padding: 0;
-        list-style: none;
-
-        .wchItem {
-          font-size: 18px;
-          font-family: "Poppins", sans-serif;
-          font-weight: 400;
-          color: #333;
-          display: flex;
-          align-items: flex-start;
-          line-height: 1.4;
-
-          /* ✅ custom bullet */
-          &::before {
-            content: "✔";
-            color: #2c7a7b;
-            font-weight: bold;
-            margin-right: 10px;
-            font-size: 18px;
-          }
-        }
-      }
-
-      .wchConclusion {
-        font-size: 20px;
-        font-weight: 600;
-        color: black;
-        margin-top: 12px;
-      }
-    }
-
-    .wchAnimation {
-    
-     box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.307);
-     border-radius: 40px;
-      width: 500px;
-      box-sizing: border-box;
-      background-image: url("/images/whychooseus.jpg ");
-      background-size: cover;
-      height: 450px;
-
-     
-    }
-  }
-}
-
-/* ✅ responsive fix */
-@media (max-width: 900px) {
   .whyChooseUs {
-    .wchDetailAndAnimation {
-      flex-direction: column;
+    height: fit-content;
+    width: auto;
+    background-color: whitesmoke;
+    padding: 60px 5%;
+    background-image: url("/images/featurebg.png");
+    background-size: contain;
+
+    .wchHeading {
+      margin-bottom: 60px;
+      font-size: 36px;
       text-align: center;
+      font-family: "Cormorant Garamond", serif;  font-style: italic;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      color: #222;
+    }
+
+    /* ✅ side-by-side text + animation */
+    .wchDetailAndAnimation {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 50px;
+      width: auto;
+      margin: 0 auto;
+      box-sizing: border-box;
 
       .wchDetails {
-        align-items: center;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        gap: 20px;
+        line-height: 1.6;
 
-        .wchDetailsText,
+        .wchDetailsText {
+          font-size: 20px;
+          max-width: 90%;
+          font-family: "Cormorant Garamond", serif;      font-style: italic;
+          font-weight: 600;
+          color: black;
+        }
+
         .wchList {
-          max-width: 100%;
-          text-align: left;
+          margin-top: 10px;
+          display: flex;
+          flex-direction: column;
+          gap: 14px;
+          padding: 0;
+          list-style: none;
+
+          .wchItem {
+            font-size: 18px;
+            font-family: "Cormorant Garamond", serif;        font-style: italic;
+            font-weight: 400;
+            color: #333;
+            display: flex;
+            align-items: flex-start;
+            line-height: 1.4;
+
+
+            /* ✅ custom bullet */
+            &::before {
+              content: "✔";
+              color: #2c7a7b;
+              font-weight: bold;
+              margin-right: 10px;
+              font-size: 18px;
+               font-family: "Cormorant Garamond", serif;    font-style: italic;
+            }
+          }
+        }
+
+        .wchConclusion {
+          font-size: 20px;
+          font-weight: 600;
+          color: black;
+          margin-top: 12px;
+           font-family: "Cormorant Garamond", serif;    font-style: italic;
+          
         }
       }
 
       .wchAnimation {
-        max-width: 280px;
-        height: 280px;
+
+        box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.307);
+        border-radius: 40px;
+        width: 500px;
+        box-sizing: border-box;
+        background-image: url("/images/team.jpg ");
+        background-size: cover;
+        height: 450px;
+
+
       }
     }
   }
-}
 
+  /* ✅ responsive fix */
+  @media (max-width: 900px) {
+    .whyChooseUs {
+      .wchDetailAndAnimation {
+        flex-direction: column;
+        text-align: center;
+
+        .wchDetails {
+          align-items: center;
+
+          .wchDetailsText,
+          .wchList {
+            max-width: 100%;
+            text-align: left;
+          }
+        }
+
+        .wchAnimation {
+          max-width: 280px;
+          height: 280px;
+        }
+      }
+    }
+  }
 
 .testimonialsSection {
-
   padding: 80px 20px;
- /* background: linear-gradient(to bottom, #0000ff5e, #61a3e1),;  */
- background-image:linear-gradient(to bottom, #0000ff5e, #61a3e1), url("/images/testbg2.png");
- background-size: contain;
-
-  /* background-color:  linear-gradient(to bottom, #0000ff96, #61a3e1),; */
-  /* background: linear-gradient(135deg, #f0f4ff, #e8f0ff); */
-
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 255, 0.4),
+      rgba(97, 163, 225, 0.9)
+    ),
+    url("/images/testbg2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   text-align: center;
+}
 
-  .testimonialHeading {
-    font-size: 2.2rem;
-    font-weight: 700;
-    margin-bottom: 50px;
-    color: white;
-    font-family: "Poppins", sans-serif;
-  }
+.testimonialHeading {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 50px;
+  color: white;
+  font-family: "Cormorant Garamond", serif ;
+  font-style: italic;
+}
 
-  .testimonialCard {
-    max-width: 700px;
-    margin: 0 auto;
-    background: #ffffff;
-    padding: 40px 30px;
-    border-radius: 18px;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: transform 0.3s ease;
-  }
+.testimonialCard {
+  max-width: 700px;
+  margin: 50px auto;
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
 
-  .testimonialCard:hover {
-    transform: translateY(-5px);
-  }
+.testimonialCard:hover {
+  transform: translateY(-5px);
+}
 
-  .testimonialImage {
-    border-radius: 50%;
-    margin-bottom: 10px;
-    object-fit: cover;
-    
-  }
+.testimonialImage {
+  border-radius: 50%;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
 
-  .testimonialFeedback {
-    font-size: 1.1rem;
-    color: #374151;
-    line-height: 1.6;
-    margin-bottom: 10px;
-    font-family: 'Poppins' sans-serif;
-    font-style: italic;
-  }
+.testimonialFeedback {
+  font-size: 1.4rem;
+  color: #374151;
+  line-height: 1.6;
+  margin-bottom: 10px;
+  font-family: "Cormorant Garamond", serif ;
+  font-style: italic;
+}
 
-  .testimonialName {
-    font-size: 1.2rem;
-     font-family: 'Poppins' sans-serif;
-    font-weight: 600;
-    color: #111827;
-  }
+.testimonialName {
+  font-size: 1.2rem;
+  font-family: "Cormorant Garamond", serif ;
+  font-style: italic;
+  font-weight: 600;
+  color: #111827;
+}
 
-  .testimonialRole {
-     font-family: 'Poppins' sans-serif;
-    font-size: 0.95rem;
-    color: #6b7280;
-  }
+.testimonialRole {
+  font-family: "Cormorant Garamond", serif ;
+  font-style: italic;
+  font-size: 0.95rem;
+  color: #6b7280;
+}
+
+/* Swiper Pagination Bullets */
+.testimonialSwiper .swiper-pagination {
+  bottom: 20px !important;
 }
 
 .swiper-pagination-bullet {
-  background: #2563eb !important;
+  background: white !important;
   opacity: 0.7;
+  width: 10px;
+  height: 10px;
+  margin: 0 6px !important;
 }
 
 .swiper-pagination-bullet-active {
-  background: #1d4ed8 !important;
+  background: #1d4ed8 !important; /* Tailwind blue-700 */
   opacity: 1;
 }
 
 
-.footer {
- background-image: linear-gradient(to top, rgba(255, 255, 255, 0.058), #61a3e1), url("/images/testbg2.png");
- background-size: contain;
-  color: #e2e8f0;
-  padding: 60px 20px 30px;
+  .footer {
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.058), #61a3e1), url("/images/testbg2.png");
+    background-size: contain;
+    color: #e2e8f0;
+    padding: 60px 20px 30px;
 
-  .footerContainer {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 40px;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-
-  .footerBrand {
-    p {
-      margin-top: 15px;
-      font-size: 0.95rem;
-      line-height: 1.6;
-      color: white;
-    }
-  }
-
-  .footerLinks {
-    h4 {
-      font-size: 1.1rem;
-      font-weight: 600;
-      margin-bottom: 15px;
-      color:white;
-      font-family: 'Poppins' sans-serif;
+    .footerContainer {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 40px;
+      max-width: 1200px;
+      margin: 0 auto;
     }
 
-    ul {
-      list-style: none;
-      padding: 0;
-
-      li {
-        margin-bottom: 10px;
+    .footerBrand {
+      p {
+        margin-top: 15px;
         font-size: 0.95rem;
-        font-family: 'Poppins' sans-serif;
-        color:white;
+        line-height: 1.6;
+        color: white;
+      }
+    }
 
-        cursor: pointer;
+    .footerLinks {
+      h4 {
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin-bottom: 15px;
+        color: white;
+         font-family: "Cormorant Garamond", serif ;    font-style: italic;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+          margin-bottom: 10px;
+          font-size: 0.95rem;
+           font-family: "Cormorant Garamond", serif;    font-style: italic;
+          color: white;
+
+          cursor: pointer;
+          transition: color 0.3s ease;
+
+          &:hover {
+            color: #ffffff;
+          }
+        }
+      }
+    }
+
+    .footerContact {
+      h4 {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: white;
+         font-family: "Cormorant Garamond", serif;    font-style: italic;
+        margin-bottom: 15px;
+      }
+
+      p {
+        margin-bottom: 8px;
+        font-size: 0.95rem;
+        color: white;
+         font-family: "Cormorant Garamond", serif;    font-style: italic;
+      }
+    }
+
+    .footerSocials {
+      margin-top: 15px;
+      display: flex;
+      gap: 12px;
+
+
+      a {
+        color: white;
         transition: color 0.3s ease;
 
         &:hover {
@@ -677,57 +764,23 @@ background-repeat: 2;
         }
       }
     }
-  }
 
-  .footerContact {
-    h4 {
-      font-size: 1.1rem;
-      font-weight: 600;
-      color:white;
-       font-family: 'Poppins' sans-serif;
-      margin-bottom: 15px;
-    }
+    .footerBottom {
+      margin-top: 40px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: 20px;
+      text-align: center;
 
-    p {
-      margin-bottom: 8px;
-      font-size: 0.95rem;
-      color:white;
-       font-family: 'Poppins' sans-serif;
-    }
-  }
 
-  .footerSocials {
-    margin-top: 15px;
-    display: flex;
-    gap: 12px;
-    
-
-    a {
-      color:white;
-      transition: color 0.3s ease;
-
-      &:hover {
-        color: #ffffff;
+      p {
+        font-size: 1.0rem;
+        color: white;
+        font-weight: 600;
+        filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.191));
+         font-family: "Cormorant Garamond", serif ;    font-style: italic;
       }
     }
   }
-
-  .footerBottom {
-    margin-top: 40px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    padding-top: 20px;
-    text-align: center;
-    
-
-    p {
-      font-size: 1.0rem;
-      color: white;
-      font-weight: 600;
-      filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.191));
-      font-family: 'Poppins' sans-serif;
-    }
-  }
-}
 
 
 
