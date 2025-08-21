@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import styles from "../../../page.module.css";
+import Image from "next/image";
 
 
 export default function HeroAnimation() {
@@ -17,9 +18,9 @@ export default function HeroAnimation() {
   }, []);
 
   return (
-    <img
+    <Image
     ref={lottieRef}
-    src="/images/laptoprmbg.png" className={styles.heroAnimation}></img>
+    src="/images/laptoprmbg.png" alt="laptop" className={styles.heroAnimation} width={410} height={410} ></Image>
     // <lottie-player
     //   ref={lottieRef}
     //   src="/lotties/growth.json"
