@@ -530,8 +530,9 @@ background-repeat: 2;
       }
 
       .wchAnimation {
-        max-width: 280px;
-        height: 280px;
+         height: 300px;
+        width: 300px;
+       
       }
     }
   }

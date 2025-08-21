@@ -14,21 +14,21 @@ export default function TestimonialsSection() {
       role: "Amazon Seller",
       feedback:
         "This platform has completely changed how I manage my business. Real-time inventory sync saved me from countless overselling issues!",
-      image: "/users/user1.jpg",
+      image: "/images/people.jpg",
     },
     {
       name: "Priya Mehta",
       role: "Shopify & Flipkart Seller",
       feedback:
         "Finally, one dashboard that shows me profits after all fees and ads. It’s like having a full finance team in one tool!",
-      image: "/users/user2.jpg",
+      image: "/images/people.jpg",
     },
     {
       name: "Rohit Verma",
       role: "eBay Power Seller",
       feedback:
         "Managing 5000+ SKUs was impossible before. Now I can track everything easily. Plus, the automation saves me 3+ hours daily.",
-      image: "/users/user3.jpg",
+      image: "/images/people.jpg",
     },
   ];
 
@@ -50,8 +50,9 @@ export default function TestimonialsSection() {
               <Image
                 src={t.image}
                 alt={t.name}
-                width={70}
-                height={70}
+                width={100}
+                height={100}
+              
                 className={styles.testimonialImage}
               />
               <p className={styles.testimonialFeedback}>“{t.feedback}”</p>

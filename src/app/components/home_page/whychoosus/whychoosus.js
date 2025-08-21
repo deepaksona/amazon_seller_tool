@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import styles from "../../../page.module.css";
+import Image from "next/image";
 
 export default function WhyChooseUs() {
   const containerRef = useRef(null);
@@ -120,7 +121,15 @@ export default function WhyChooseUs() {
         </div>
 
         {/* ✅ Animate lottie */}
-        <lottie-player
+
+        <Image
+         src={"/images/whychooseus.jpg"}
+         alt="team"
+         width={400}
+         height={400}
+         className={styles.wchAnimation}
+        ></Image>
+        {/* <lottie-player
           ref={lottieRef}
           src="/lotties/sales.json"
           background="transparent"
@@ -128,7 +137,7 @@ export default function WhyChooseUs() {
           className={styles.wchAnimation}
           loop
           autoplay
-        ></lottie-player>
+        ></lottie-player> */}
       </div>
     </div>
   );
