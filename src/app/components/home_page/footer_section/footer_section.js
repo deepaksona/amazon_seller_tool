@@ -10,13 +10,7 @@ export default function Footer() {
       <div className={styles.footerContainer}>
         {/* Left Logo + About */}
         <div className={styles.footerBrand}>
-          <Image
-            src="/logo.png"
-            alt="LemonLayer Logo"
-            width={150}
-            height={50}
-            className={styles.footerLogo}
-          />
+         <div className={styles.footerLogo}> </div>
           <p>
             LemonLayer helps businesses grow smarter with automation, real-time
             analytics, and seamless marketplace integrations.

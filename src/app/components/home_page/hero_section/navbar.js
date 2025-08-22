@@ -14,15 +14,22 @@ export default function Navbar() {
 
   return (
     <div className={styles.navbar}>
-      <div className={styles.logo}>LemonLayer</div>
+      <div className={styles.navRowOne}>
+ <div className={styles.logo}></div>
+ <div className={styles.wrapbutton}>
+<div className={styles.login}>Login</div>
+        <div className={styles.getStart}>Get Started</div>
+ </div>
+
+      </div>
+     
       <div className={styles.menu}>
         {navItems.map((e, i) => (
           <a key={i} href={e.href} className={styles.menuItem}>
             {e.label}
           </a>
         ))}
-        <div className={styles.login}>Login</div>
-        <div className={styles.getStart}>Get Started</div>
+        
       </div>
     </div>
   );

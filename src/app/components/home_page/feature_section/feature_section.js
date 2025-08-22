@@ -11,7 +11,7 @@ export default function FeatureSection() {
     {
       icon: "/icons/dashboard.png",
       title: "Multi-Channel Sales Dashboard",
-      desc: "View Amazon, Flipkart, eBay & Shopify performance in one place."
+      desc: "View Amazon, Walmart, eBay & Shopify performance in one place."
     },
     {
       icon: "/icons/inventory.png",

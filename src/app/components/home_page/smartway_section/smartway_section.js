@@ -13,7 +13,7 @@ export default function SmartWaySection() {
     {
       icon: "/images/secure.jpg",
       title: "Secure Marketplace Integrations",
-      desc: "Your online business deserves the highest level of security. With our secure marketplace integrations, you can confidently connect Amazon, Flipkart, eBay, and Shopify accounts without worrying about data breaches or leaks. We use bank-level encryption to protect sensitive information, ensure compliance, and guarantee that your business and customer data remain private at all times.",
+      desc: "Your online business deserves the highest level of security. With our secure marketplace integrations, you can confidently connect Amazon, Walmart, eBay, and Shopify accounts without worrying about data breaches or leaks. We use bank-level encryption to protect sensitive information, ensure compliance, and guarantee that your business and customer data remain private at all times.",
     },
     {
        icon: "/images/savetime2.jpg",
@@ -62,7 +62,7 @@ export default function SmartWaySection() {
       </h2>
       <p className={styles.smartWayDesc}>
         One platform, endless possibilities. Whether you’re selling on Amazon,
-        Flipkart, eBay, Shopify, or all of them — we simplify your business so
+        Walmart, eBay, Shopify, or all of them — we simplify your business so
         you can focus on growth.
       </p>
 

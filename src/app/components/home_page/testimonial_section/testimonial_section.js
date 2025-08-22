@@ -24,14 +24,14 @@ export default function TestimonialsSection() {
     },
     {
       name: "Sophia Williams",
-      role: "Amazon Seller",
+      role: "Walmart Seller",
       feedback:
         "Finally, one dashboard that shows me profits after all fees and ads. It’s like having a full finance team in one tool!",
       image: "/images/people3.jpg",
     },
     {
       name: "David Johnson",
-      role: "Amazon Seller",
+      role: "Ebay Seller",
       feedback:
         "Managing 5000+ SKUs was impossible before. Now I can track everything easily. Plus, the automation saves me 3+ hours daily.",
       image: "/images/people2.jpg",

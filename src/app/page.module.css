@@ -29,33 +29,39 @@
 
     align-items: start;
     display: flex;
- 
-    gap: 30px;
+    flex-direction: column;
 
+    gap: 15px;
 
-    .logo {
-
-      font-size: 30px;
-      font-family: "Protest Strike", ;
-      font-weight: bolder;
-      color: white;
-
-    }
-
-    .menu {
+    .navRowOne {
+     
+      width: 100%;
       display: flex;
-      gap: 20px;
+      flex-direction: row;
+      justify-content: space-between;
       align-items: center;
-
-      .menuItem {
-        font-size: 18px;
+      .logo {
+        height: 60px;
+        width: 200px;
+        background-image: url("/images/logo.png");
+        background-origin: border-box;
+        background-size: contain;
+        object-fit: fill;
+        background-position: center;
+        background-color: whitesmoke;
+        background-repeat: no-repeat;
+        border-radius: 50px;
         color: white;
-        text-decoration: none;
-        font-weight: 500;
-        font-family: "Cormorant Garamond", serif ;    font-style: italic;
-      }
 
-      .getStart {
+      }
+      .wrapbutton{
+        height: fit-content;
+        width: fit-content;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+         .getStart {
         height: 20px;
         width: 100;
         padding: 10px;
@@ -64,7 +70,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        font-family: "Cormorant Garamond", serif ;    font-style: italic;
+        font-family: "Cormorant Garamond", serif;
+        font-style: italic;
         box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.317);
         background-color: #6ba32d;
       }
@@ -82,9 +89,32 @@
         /* justify-content: center; */
         color: white;
 
-        font-family: "Cormorant Garamond", serif ;    font-style: italic;
+        font-family: "Cormorant Garamond", serif;
+        font-style: italic;
         background-color: transparent;
       }
+      }
+
+     
+    }
+
+
+    .menu {
+      margin-left: 10px;
+      display: flex;
+      gap: 20px;
+      align-items: center;
+
+      .menuItem {
+        font-size: 18px;
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        font-family: "Cormorant Garamond", serif;
+        font-style: italic;
+      }
+
+
     }
 
   }
@@ -132,7 +162,8 @@
         font-size: 30px;
         font-weight: bold;
         color: white;
-        font-family: "Cormorant Garamond", serif ;    font-style: italic;
+        font-family: "Cormorant Garamond", serif;
+        font-style: italic;
 
       }
 
@@ -141,7 +172,8 @@
         font-weight: bold;
         color: white;
         width: 600px;
-         font-family: "Cormorant Garamond", serif ;    font-style: italic;
+        font-family: "Cormorant Garamond", serif;
+        font-style: italic;
 
       }
 
@@ -150,7 +182,8 @@
         font-weight: bold;
         color: white;
         width: 600px;
-         font-family: "Cormorant Garamond", serif ;    font-style: italic;
+        font-family: "Cormorant Garamond", serif;
+        font-style: italic;
 
       }
 
@@ -168,7 +201,8 @@
         font-weight: 500;
         align-items: center;
         justify-content: center;
-        font-family: "Cormorant Garamond", serif ;    font-style: italic;
+        font-family: "Cormorant Garamond", serif;
+        font-style: italic;
         box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.227);
         background-color: #6ba32d;
         gap: 5px;
@@ -187,9 +221,10 @@
     }
 
     .heroAnimation {
-
-      height: 410px;
-      width: auto;
+      height: 600px;
+      width: 600px;
+      /* height: 410px; */
+      /* width: auto; */
       filter: drop-shadow(2px 2px 5px rgba(255, 255, 255, 0.227));
       margin-bottom: 50px;
 
@@ -232,7 +267,8 @@
           font-weight: 500;
           margin-top: 10px;
           text-align: start;
-           font-family: "Cormorant Garamond", serif ;    font-style: italic;
+          font-family: "Cormorant Garamond", serif;
+          font-style: italic;
         }
       }
 
@@ -264,7 +300,8 @@
       margin-bottom: 100px;
       font-size: 40px;
       text-align: center;
-      font-family: "Cormorant Garamond", serif ;  font-style: italic;
+      font-family: "Cormorant Garamond", serif;
+      font-style: italic;
       font-weight: bolder;
     }
 
@@ -338,7 +375,8 @@
       margin-bottom: 50px;
       font-size: 50px;
       text-align: center;
-      font-family: "Cormorant Garamond", serif ;  font-style: italic;
+      font-family: "Cormorant Garamond", serif;
+      font-style: italic;
       font-weight: bolder;
       color: white;
     }
@@ -351,7 +389,7 @@
       color: white;
       line-height: 1.6;
       font-family: 'Cormorant Garamond';
-       font-style: italic;
+      font-style: italic;
     }
 
     /* Timeline wrapper */
@@ -385,7 +423,7 @@
           border-radius: 20px;
           box-sizing: border-box;
           padding: 20px 20px;
-          border:  1px solid rgba(255, 255, 255, 0.401);
+          border: 1px solid rgba(255, 255, 255, 0.401);
 
           .benefitDetail {
             max-width: 70%;
@@ -393,7 +431,7 @@
             align-items: end;
             display: flex;
             flex-direction: column;
-            background-color: transparent; 
+            background-color: transparent;
             /* background-color: rgba(255, 255, 255, 0.792); */
 
             border-radius: 16px;
@@ -402,13 +440,13 @@
             /* -webkit-backdrop-filter: blur(10px);
           box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08); */
             transition: transform 0.3s ease, box-shadow 0.3s ease;
-            
-            &:nth-child(even){
-               align-items: start;
-            }
-            
 
-          
+            &:nth-child(even) {
+              align-items: start;
+            }
+
+
+
 
             .benefitTitle {
               font-size: 30px;
@@ -417,11 +455,12 @@
               color: white;
               /* color: #111827; */
               font-family: 'Cormorant Garamond';
-               font-style: italic;
+              font-style: italic;
               text-align: left;
-                 &:nth-child(even){
-               text-align: right;
-            }
+
+              &:nth-child(even) {
+                text-align: right;
+              }
             }
 
             .benefitDesc {
@@ -432,20 +471,22 @@
               line-height: 1.5;
               font-family: 'Cormorant Garamond';
               font-style: italic;
-               text-align: right;
-                 &:nth-child(even){
-               text-align: left;
-            }
+              text-align: right;
+
+              &:nth-child(even) {
+                text-align: left;
+              }
 
             }
           }
-            .benefitIcon {
-              margin-bottom: 12px;
-              height: 330px;
-              width: 330px;
-              object-fit: cover;
-              border-radius: 20px;
-            }
+
+          .benefitIcon {
+            margin-bottom: 12px;
+            height: 330px;
+            width: 330px;
+            object-fit: cover;
+            border-radius: 20px;
+          }
 
         }
       }
@@ -479,7 +520,8 @@
       margin-bottom: 60px;
       font-size: 36px;
       text-align: center;
-      font-family: "Cormorant Garamond", serif;  font-style: italic;
+      font-family: "Cormorant Garamond", serif;
+      font-style: italic;
       font-weight: 700;
       letter-spacing: 0.5px;
       color: #222;
@@ -506,7 +548,8 @@
         .wchDetailsText {
           font-size: 20px;
           max-width: 90%;
-          font-family: "Cormorant Garamond", serif;      font-style: italic;
+          font-family: "Cormorant Garamond", serif;
+          font-style: italic;
           font-weight: 600;
           color: black;
         }
@@ -521,7 +564,8 @@
 
           .wchItem {
             font-size: 18px;
-            font-family: "Cormorant Garamond", serif;        font-style: italic;
+            font-family: "Cormorant Garamond", serif;
+            font-style: italic;
             font-weight: 400;
             color: #333;
             display: flex;
@@ -536,7 +580,8 @@
               font-weight: bold;
               margin-right: 10px;
               font-size: 18px;
-               font-family: "Cormorant Garamond", serif;    font-style: italic;
+              font-family: "Cormorant Garamond", serif;
+              font-style: italic;
             }
           }
         }
@@ -546,8 +591,9 @@
           font-weight: 600;
           color: black;
           margin-top: 12px;
-           font-family: "Cormorant Garamond", serif;    font-style: italic;
-          
+          font-family: "Cormorant Garamond", serif;
+          font-style: italic;
+
         }
       }
 
@@ -591,93 +637,92 @@
     }
   }
 
-.testimonialsSection {
-  padding: 80px 20px;
-  background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 255, 0.4),
-      rgba(97, 163, 225, 0.9)
-    ),
-    url("/images/testbg2.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  text-align: center;
-}
+  .testimonialsSection {
+    padding: 80px 20px;
+    background-image: linear-gradient(to bottom,
+        rgba(0, 0, 255, 0.4),
+        rgba(97, 163, 225, 0.9)),
+      url("/images/testbg2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+  }
 
-.testimonialHeading {
-  font-size: 2.2rem;
-  font-weight: 700;
-  margin-bottom: 50px;
-  color: white;
-  font-family: "Cormorant Garamond", serif ;
-  font-style: italic;
-}
+  .testimonialHeading {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: white;
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+  }
 
-.testimonialCard {
-  max-width: 700px;
-  margin: 50px auto;
-  background: #ffffff;
-  padding: 40px 30px;
-  border-radius: 18px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: transform 0.3s ease;
-}
+  .testimonialCard {
+    max-width: 700px;
+    margin: 50px auto;
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 18px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+  }
 
-.testimonialCard:hover {
-  transform: translateY(-5px);
-}
+  .testimonialCard:hover {
+    transform: translateY(-5px);
+  }
 
-.testimonialImage {
-  border-radius: 50%;
-  margin-bottom: 10px;
-  object-fit: cover;
-}
+  .testimonialImage {
+    border-radius: 50%;
+    margin-bottom: 10px;
+    object-fit: cover;
+  }
 
-.testimonialFeedback {
-  font-size: 1.4rem;
-  color: #374151;
-  line-height: 1.6;
-  margin-bottom: 10px;
-  font-family: "Cormorant Garamond", serif ;
-  font-style: italic;
-}
+  .testimonialFeedback {
+    font-size: 1.4rem;
+    color: #374151;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+  }
 
-.testimonialName {
-  font-size: 1.2rem;
-  font-family: "Cormorant Garamond", serif ;
-  font-style: italic;
-  font-weight: 600;
-  color: #111827;
-}
+  .testimonialName {
+    font-size: 1.2rem;
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+    font-weight: 600;
+    color: #111827;
+  }
 
-.testimonialRole {
-  font-family: "Cormorant Garamond", serif ;
-  font-style: italic;
-  font-size: 0.95rem;
-  color: #6b7280;
-}
+  .testimonialRole {
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+    font-size: 0.95rem;
+    color: #6b7280;
+  }
 
-/* Swiper Pagination Bullets */
-.testimonialSwiper .swiper-pagination {
-  bottom: 20px !important;
-}
+  /* Swiper Pagination Bullets */
+  .testimonialSwiper .swiper-pagination {
+    bottom: 20px !important;
+  }
 
-.swiper-pagination-bullet {
-  background: white !important;
-  opacity: 0.7;
-  width: 10px;
-  height: 10px;
-  margin: 0 6px !important;
-}
+  .swiper-pagination-bullet {
+    background: white !important;
+    opacity: 0.7;
+    width: 10px;
+    height: 10px;
+    margin: 0 6px !important;
+  }
 
-.swiper-pagination-bullet-active {
-  background: #1d4ed8 !important; /* Tailwind blue-700 */
-  opacity: 1;
-}
+  .swiper-pagination-bullet-active {
+    background: #1d4ed8 !important;
+    /* Tailwind blue-700 */
+    opacity: 1;
+  }
 
 
   .footer {
@@ -695,6 +740,20 @@
     }
 
     .footerBrand {
+      .footerLogo{
+        height: 60px;
+        width: 200px;
+        background-image: url("/images/logo.png");
+        background-origin: border-box;
+        background-size: contain;
+        object-fit: fill;
+        background-position: center;
+        background-color: whitesmoke;
+        background-repeat: no-repeat;
+        border-radius: 50px;
+        color: white;
+
+      }
       p {
         margin-top: 15px;
         font-size: 0.95rem;
@@ -709,7 +768,8 @@
         font-weight: 600;
         margin-bottom: 15px;
         color: white;
-         font-family: "Cormorant Garamond", serif ;    font-style: italic;
+        font-family: "Cormorant Garamond", serif;
+        font-style: italic;
       }
 
       ul {
@@ -719,7 +779,8 @@
         li {
           margin-bottom: 10px;
           font-size: 0.95rem;
-           font-family: "Cormorant Garamond", serif;    font-style: italic;
+          font-family: "Cormorant Garamond", serif;
+          font-style: italic;
           color: white;
 
           cursor: pointer;
@@ -737,7 +798,8 @@
         font-size: 1.1rem;
         font-weight: 600;
         color: white;
-         font-family: "Cormorant Garamond", serif;    font-style: italic;
+        font-family: "Cormorant Garamond", serif;
+        font-style: italic;
         margin-bottom: 15px;
       }
 
@@ -745,7 +807,8 @@
         margin-bottom: 8px;
         font-size: 0.95rem;
         color: white;
-         font-family: "Cormorant Garamond", serif;    font-style: italic;
+        font-family: "Cormorant Garamond", serif;
+        font-style: italic;
       }
     }
 
@@ -777,7 +840,8 @@
         color: white;
         font-weight: 600;
         filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.191));
-         font-family: "Cormorant Garamond", serif ;    font-style: italic;
+        font-family: "Cormorant Garamond", serif;
+        font-style: italic;
       }
     }
   }

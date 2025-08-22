@@ -88,7 +88,7 @@ export default function WhyChooseUs() {
   const points = [
     { title: "Real-time sales & inventory tracking", desc: "no more manual updates" },
     { title: "GST-ready reports & invoices", desc: "stay compliant without extra effort" },
-    { title: "Affordable pricing", desc: "made for Indian sellers, no hidden costs" },
+    { title: "Affordable pricing", desc: "made for global sellers, no hidden costs" },
     { title: "Local support", desc: "quick help on WhatsApp & phone in Hindi/English" },
   ];
 
@@ -100,7 +100,7 @@ export default function WhyChooseUs() {
           <div className={styles.wchDetailsText} ref={detailsRef}>
             Managing your Amazon business with Excel or manual tracking is slow
             and error-prone. Our platform is built{" "}
-            <b>exclusively for Indian Amazon sellers</b> to make things simple:
+            <b>exclusively for global Amazon sellers</b> to make things simple:
           </div>
 
           <ul className={styles.wchList}>
