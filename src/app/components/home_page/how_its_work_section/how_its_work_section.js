@@ -12,7 +12,7 @@ export default function Howitswork() {
   const workList = [
     {
       image: "/icons/login_account.png",
-      desc: "Connect your Amazon account securely and manage all operations from one intuitive dashboard.",
+      desc: "Connect your e-commerce account securely and manage all operations from one intuitive dashboard.",
     },
     {
       image: "/icons/monitor.png",
@@ -24,7 +24,7 @@ export default function Howitswork() {
     },
     {
       image: "/icons/competitive.png",
-      desc: "Stay ahead of competition with pricing and performance insights.",
+      desc: "Stay ahead of the competition with AI-powered pricing and performance insights.",
     },
     {
       image: "/icons/analytics.png",

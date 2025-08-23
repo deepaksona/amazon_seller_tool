@@ -23,16 +23,17 @@ export default function FeatureSection() {
       title: "Unified Order Management",
       desc: "Fulfill and track orders from one dashboard with ease."
     },
-    {
-      icon: "/icons/expenses.png",
-      title: "Profit & Expense Analytics",
-      desc: "See true profits after fees, shipping & ads across platforms."
-    },
-    {
-      icon: "/icons/competition2.png",
-      title: "Competitor & Price Tracking",
-      desc: "Stay ahead with real-time pricing and competitor insights."
-    },
+   {
+  icon: "/icons/expenses.png",
+  title: "Profit & Expense Analytics",
+  desc: "See true profits after fees, shipping & ads across platforms with AI-powered insights."
+},
+{
+  icon: "/icons/competition2.png",
+  title: "Competitor & Price Tracking",
+  desc: "Stay ahead with AI-driven real-time pricing and competitor insights."
+},
+
     {
       icon: "/icons/list.png",
       title: "Listing Management",

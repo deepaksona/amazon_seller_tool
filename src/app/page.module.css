@@ -9,43 +9,42 @@
   display: flex;
   flex-direction: column;
   /* background: linear-gradient(to top, rgba(0, 0, 255, 0.597), #61a3e1);*/
-
-
-
-
-
   box-sizing: border-box;
 
   .navbar {
-
-    padding-left: 30px;
-    padding-right: 30px;
     box-sizing: border-box;
     margin-top: 20px;
-
-
     width: 100%;
     justify-content: space-between;
-
     align-items: start;
     display: flex;
     flex-direction: column;
-
     gap: 15px;
 
+    .dividerNav {
+      display: flex;
+      width: 100%;
+      height: 1px;
+      background-color: rgba(255, 255, 255, 0.297);
+    }
+
     .navRowOne {
-     
+      box-sizing: border-box;
+      padding-left: 30px;
+      padding-right: 30px;
       width: 100%;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
+
       .logo {
-        height: 60px;
+        height: 40px;
         width: 200px;
         background-image: url("/images/logo.png");
         background-origin: border-box;
-        background-size: contain;
+
+        background-size: 140px;
         object-fit: fill;
         background-position: center;
         background-color: whitesmoke;
@@ -54,59 +53,55 @@
         color: white;
 
       }
-      .wrapbutton{
+
+      .wrapbutton {
         height: fit-content;
         width: fit-content;
         display: flex;
         flex-direction: row;
         align-items: center;
         gap: 30px;
-         .getStart {
-        height: 20px;
-        width: 100;
-        padding: 10px;
-        color: white;
-        border-radius: 50px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: "Cormorant Garamond", serif;
-        font-style: italic;
-        box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.317);
-        background-color: #6ba32d;
+
+        .getStart {
+          height: 20px;
+          width: 100;
+          padding: 10px;
+          color: white;
+          border-radius: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-family: "Cormorant Garamond", serif;
+          font-style: italic;
+          box-shadow: 0 0 10px 1px rgba(255, 255, 255, 0.317);
+          background-color: #6ba32d;
+        }
+
+        .login {
+          font-size: 18px;
+          font-weight: 500;
+          color: white;
+          font-family: "Cormorant Garamond", serif;
+          font-style: italic;
+          background-color: transparent;
+        }
       }
 
-      .login {
-        font-size: 18px;
-        /* height: 15px;
-        width:100;
-        padding: 10px;
-      border: 2px solid white;
-        border-radius:10px; */
-        /* display: flex;
-        align-items: center; */
-        font-weight: 500;
-        /* justify-content: center; */
-        color: white;
 
-        font-family: "Cormorant Garamond", serif;
-        font-style: italic;
-        background-color: transparent;
-      }
-      }
-
-     
     }
 
 
     .menu {
-      margin-left: 10px;
+      box-sizing: border-box;
+      padding-left: 30px;
+      padding-right: 30px;
+      margin-left: 5px;
       display: flex;
-      gap: 20px;
+      gap: 50px;
       align-items: center;
 
       .menuItem {
-        font-size: 18px;
+        font-size: 22px;
         color: white;
         text-decoration: none;
         font-weight: 500;
@@ -120,14 +115,16 @@
   }
 
   .divider {
+    
     margin-top: 20px;
-    width: 100%;
+    width: auto;
     height: 1px;
     background-color: rgba(255, 255, 255, 0.297);
   }
 
 
   .heroSection {
+    box-sizing: border-box;
     background-image: linear-gradient(to bottom, #0000ff32, #61a3e1),
       /* 50% opacity black overlay */
       url("/images/bgforhero.png");
@@ -168,7 +165,7 @@
       }
 
       .subHeading {
-        font-size: 20px;
+        font-size: 22px;
         font-weight: bold;
         color: white;
         width: 600px;
@@ -178,7 +175,7 @@
       }
 
       .ctaHeading {
-        font-size: 20px;
+        font-size: 24px;
         font-weight: bold;
         color: white;
         width: 600px;
@@ -221,12 +218,12 @@
     }
 
     .heroAnimation {
-      height: 600px;
-      width: 600px;
-      /* height: 410px; */
-      /* width: auto; */
+      /* height: 600px;
+      width: 600px; */
+      height: 410px;
+      width: auto;
       filter: drop-shadow(2px 2px 5px rgba(255, 255, 255, 0.227));
-      margin-bottom: 50px;
+      margin-bottom: 80px;
 
 
 
@@ -546,7 +543,7 @@
         line-height: 1.6;
 
         .wchDetailsText {
-          font-size: 20px;
+          font-size: 24px;
           max-width: 90%;
           font-family: "Cormorant Garamond", serif;
           font-style: italic;
@@ -563,7 +560,7 @@
           list-style: none;
 
           .wchItem {
-            font-size: 18px;
+            font-size: 20px;
             font-family: "Cormorant Garamond", serif;
             font-style: italic;
             font-weight: 400;
@@ -636,93 +633,98 @@
       }
     }
   }
-
-  .testimonialsSection {
-    padding: 80px 20px;
-    background-image: linear-gradient(to bottom,
-        rgba(0, 0, 255, 0.4),
-        rgba(97, 163, 225, 0.9)),
-      url("/images/testbg2.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    text-align: center;
-  }
+.testimonialsSection {
+  padding: 80px 20px;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 255, 0.4), rgba(97, 163, 225, 0.9)), url("/images/testbg2.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
 
   .testimonialHeading {
     font-size: 2.2rem;
     font-weight: 700;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     color: white;
     font-family: "Cormorant Garamond", serif;
     font-style: italic;
   }
 
   .testimonialCard {
-    max-width: 700px;
-    margin: 50px auto;
+    max-width: 650px;
+    margin: 40px auto;
     background: #ffffff;
-    padding: 40px 30px;
+    padding: 35px 25px;
     border-radius: 18px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
     display: flex;
     flex-direction: column;
     align-items: center;
     transition: transform 0.3s ease;
-  }
 
-  .testimonialCard:hover {
-    transform: translateY(-5px);
-  }
+    &:hover {
+      transform: translateY(-5px);
+    }
 
-  .testimonialImage {
-    border-radius: 50%;
-    margin-bottom: 10px;
-    object-fit: cover;
-  }
+    .testimonialImage {
+      border-radius: 50%;
+      margin-bottom: 5px;
+      height: 170px;
+      width: 170px;
+      object-fit: cover;
+    }
 
-  .testimonialFeedback {
-    font-size: 1.4rem;
-    color: #374151;
-    line-height: 1.6;
-    margin-bottom: 10px;
-    font-family: "Cormorant Garamond", serif;
-    font-style: italic;
-  }
+    .testimonialFeedback {
+      font-size: 1.35rem;
+      color: #374151;
+     
+      margin-bottom: 8px;
+      font-family: "Cormorant Garamond", serif;
+      font-style: italic;
+      text-align: center;
+    }
 
-  .testimonialName {
-    font-size: 1.2rem;
-    font-family: "Cormorant Garamond", serif;
-    font-style: italic;
-    font-weight: 600;
-    color: #111827;
-  }
+    .testimonialName {
+      font-size: 1.15rem;
+      font-family: "Cormorant Garamond", serif;
+      font-style: italic;
+      font-weight: 600;
+      color: #111827;
+      
+    }
 
-  .testimonialRole {
-    font-family: "Cormorant Garamond", serif;
-    font-style: italic;
-    font-size: 0.95rem;
-    color: #6b7280;
-  }
+    .testimonialRole {
+      font-family: "Cormorant Garamond", serif;
+      font-style: italic;
+      font-size: 0.9rem;
+      color: #6b7280;
+    }
 
-  /* Swiper Pagination Bullets */
-  .testimonialSwiper .swiper-pagination {
-    bottom: 20px !important;
-  }
+    .testimonialSwiper {
+      :global(.swiper-pagination) {
+        bottom: 15px !important;
+      }
 
-  .swiper-pagination-bullet {
-    background: white !important;
-    opacity: 0.7;
-    width: 10px;
-    height: 10px;
-    margin: 0 6px !important;
-  }
+      :global(.swiper-pagination-bullet) {
+        width: 12px !important;
+        height: 12px !important;
+        background-color: #ffffff !important;
+        opacity: 0.7 !important;
+        border-radius: 50% !important;
+        margin: 0 6px !important;
+        transition: all 0.3s ease !important;
+      }
 
-  .swiper-pagination-bullet-active {
-    background: #1d4ed8 !important;
-    /* Tailwind blue-700 */
-    opacity: 1;
+      :global(.swiper-pagination-bullet-active) {
+        background-color: #1d4ed8 !important;
+        opacity: 1 !important;
+        transform: scale(1.2) !important;
+      }
+    }
   }
+}
+
+
 
 
   .footer {
@@ -740,12 +742,15 @@
     }
 
     .footerBrand {
-      .footerLogo{
-        height: 60px;
+
+      
+      .footerlogo {
+        height: 40px;
         width: 200px;
         background-image: url("/images/logo.png");
         background-origin: border-box;
-        background-size: contain;
+             
+        background-size: 140px;
         object-fit: fill;
         background-position: center;
         background-color: whitesmoke;
@@ -754,6 +759,7 @@
         color: white;
 
       }
+
       p {
         margin-top: 15px;
         font-size: 0.95rem;

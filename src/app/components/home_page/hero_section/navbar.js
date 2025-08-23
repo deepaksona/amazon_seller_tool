@@ -20,9 +20,10 @@ export default function Navbar() {
 <div className={styles.login}>Login</div>
         <div className={styles.getStart}>Get Started</div>
  </div>
+ 
 
       </div>
-     
+     <div className={styles.dividerNav}></div>
       <div className={styles.menu}>
         {navItems.map((e, i) => (
           <a key={i} href={e.href} className={styles.menuItem}>

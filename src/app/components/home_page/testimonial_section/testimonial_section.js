@@ -14,36 +14,44 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 export default function TestimonialsSection() {
-  const sectionRef = useRef(null);  const testimonials = [
-    {
-      name: "John Miller",
-      role: "Amazon Seller",
-      feedback:
-        "This platform has completely changed how I manage my business. Real-time inventory sync saved me from countless overselling issues!",
-      image: "/images/people1.jpg",
-    },
-    {
-      name: "Sophia Williams",
-      role: "Walmart Seller",
-      feedback:
-        "Finally, one dashboard that shows me profits after all fees and ads. It’s like having a full finance team in one tool!",
-      image: "/images/people3.jpg",
-    },
-    {
-      name: "David Johnson",
-      role: "Ebay Seller",
-      feedback:
-        "Managing 5000+ SKUs was impossible before. Now I can track everything easily. Plus, the automation saves me 3+ hours daily.",
-      image: "/images/people2.jpg",
-    },
-    {
-      name: "Emily Carter",
-      role: "Amazon Seller",
-      feedback:
-        "I love how simple and intuitive this tool is. From tracking profits to managing inventory, everything feels effortless now!",
-      image: "/images/people4.jpg", // tu ek aur female image add kar liyo
-    },
-  ];
+  const sectionRef = useRef(null);
+  const testimonials = [
+  {
+    name: "John Miller",
+    role: "Amazon Seller",
+    feedback:
+      "This platform has completely changed how I manage my business. Real-time inventory sync saved me from countless overselling issues!",
+    image: "/images/people1.jpg",
+  },
+  {
+    name: "Sophia Williams",
+    role: "Walmart Seller",
+    feedback:
+      "Finally, one dashboard that shows me profits after all fees and ads. It’s like having a full finance team in one tool!",
+    image: "/images/people3.jpg",
+  },
+  {
+    name: "David Johnson",
+    role: "Ebay Seller",
+    feedback:
+      "Managing 5000+ SKUs was impossible before. Now I can track everything easily. Plus, the automation saves me 3+ hours daily.",
+    image: "/images/people2.jpg",
+  },
+  {
+    name: "Emily Carter",
+    role: "Amazon Seller",
+    feedback:
+      "I love how simple and intuitive this tool is. From tracking profits to managing inventory, everything feels effortless now!",
+    image: "/images/people4.jpg",
+  },
+  {
+    name: "Olivia Brown",
+    role: "Shopify Seller",
+    feedback:
+      "This tool has made managing my online store so much easier. The AI-powered insights and automation save me hours every day!",
+    image: "/images/people5.jpg", // new female image
+  },
+];
 
 
   useEffect(() => {

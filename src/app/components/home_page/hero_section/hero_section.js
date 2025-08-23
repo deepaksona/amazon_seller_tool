@@ -18,18 +18,16 @@ export default function HeroSection() {
   return (
     <div ref={headingRef} className={styles.headingAndDescription}>
       <div className={styles.heroHeading}>
-        Manage Your Amazon Business Smarter
+        Manage Your E-Commerce Business Smarter
         <br />
         All in One Dashboard
       </div>
       <div className={styles.subHeading}>
-        Track your sales in real-time, manage inventory efficiently, fulfill
-        orders without hassle, and get powerful insights to grow faster.
-        Whether you&apos;re just starting out or already scaling, this tool
-        helps you save time, reduce manual work, and make smarter decisions.
+Track your sales in real-time, manage inventory efficiently, and fulfill orders effortlessly—all powered by AI. Our system analyzes trends, predicts demand, and provides actionable insights to help you grow. Whether you&apos;re starting out or scaling up, this AI-driven tool saves time, reduces manual work, and enables smarter, data-backed decisions.
+
       </div>
       <div className={styles.ctaHeading}>
-        Start Your Free Trial Today – Transform Your Amazon Business
+        Start Your Free Trial Today – Transform Your E-Commerce Business
       </div>
       <div className={styles.ctaButton}>
         Get Started{" "}
