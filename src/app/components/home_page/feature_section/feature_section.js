@@ -20,6 +20,7 @@ export default function FeatureSection() {
   const titleRef = useRef(null);
 
   useEffect(() => {
+      const cards = cardsRef.current;
     const ctx = gsap.context(() => {
       // Title animation
       gsap.from(titleRef.current, {

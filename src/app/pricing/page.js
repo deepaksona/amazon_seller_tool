@@ -56,6 +56,7 @@ export default function PricingPage() {
   ];
 
   useEffect(() => {
+    
     if (!sectionRef.current) return;
 
     const cards = sectionRef.current.querySelectorAll(`.${styles.pricingCard}`);
@@ -108,7 +109,7 @@ export default function PricingPage() {
             Choose the Plan That Fits Your Business
           </h2>
           <p className={styles.pricingDesc}>
-            Our flexible plans grow with your business. Whether you're just
+            Our flexible plans grow with your business. Whether you&apos;re just
             starting out or scaling globally, each plan provides powerful tools,
             real-time analytics, and AI-driven insights to manage multiple
             marketplaces, automate repetitive tasks, and maximize profits

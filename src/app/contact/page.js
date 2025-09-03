@@ -71,7 +71,7 @@ const Contact = () => {
         {/* Header Section */}
         <div className={styles.header}>
           <h1>Get in Touch</h1>
-          <p>Have questions about LemonLayer? We're here to help! Reach out to our team and we'll get back to you within 24 hours.</p>
+          <p>Have questions about LemonLayer? We&apos;re here to help! Reach out to our team and we'll get back to you within 24 hours.</p>
         </div>
 
         {/* Main Content Grid */}
