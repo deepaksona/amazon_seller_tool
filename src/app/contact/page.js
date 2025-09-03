@@ -71,7 +71,7 @@ const Contact = () => {
         {/* Header Section */}
         <div className={styles.header}>
           <h1>Get in Touch</h1>
-          <p>Have questions about LemonLayer? We&apos;re here to help! Reach out to our team and we'll get back to you within 24 hours.</p>
+          <p>Have questions about LemonLayer? We&apos;re here to help! Reach out to our team and we&apos;ll get back to you within 24 hours.</p>
         </div>
 
         {/* Main Content Grid */}
@@ -79,12 +79,12 @@ const Contact = () => {
           {/* Contact Form */}
           <div className={styles.contactForm}>
             <h2>Send us a Message</h2>
-            <p className={styles.formSubtitle}>Fill out the form below and we'll respond as soon as possible.</p>
+            <p className={styles.formSubtitle}>Fill out the form below and we&apos;ll respond as soon as possible.</p>
             
             {submitStatus === 'success' && (
               <div className={styles.successMessage}>
                 <i className="fas fa-check-circle"></i>
-                Thank you! We'll get back to you within 24 hours.
+                Thank you! We&apos;ll get back to you within 24 hours.
               </div>
             )}
 
