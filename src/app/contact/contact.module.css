@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
 
 .contactPage {
+  content: "";
   min-height: 100vh;
     background-image: linear-gradient(to bottom, #0000ff08, #61a3e1),
       /* 50% opacity black overlay */
