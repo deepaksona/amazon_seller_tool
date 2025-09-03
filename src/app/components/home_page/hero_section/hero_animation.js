@@ -29,8 +29,6 @@
 //      </div>
 //   );
 // }
-
-
 "use client";
 
 import { useEffect, useRef } from "react";
@@ -38,32 +36,26 @@ import gsap from "gsap";
 import styles from "../../../page.module.css";
 import Image from "next/image";
 
-
 export default function HeroAnimation() {
-  const lottieRef = useRef(null);
+  const containerRef = useRef(null);
 
   useEffect(() => {
-    import("@lottiefiles/lottie-player");
- 
-    if (lottieRef.current) {
-      gsap.from(lottieRef.current, { opacity: 0, x: 50, duration: 1, delay: 0.5 });
-    }
+    const ctx = gsap.context(() => {
+      gsap.from(containerRef.current, { opacity: 0, x: 50, duration: 1, delay: 0.5 });
+    }, containerRef);
+
+    return () => ctx.revert(); // cleanup on unmount to prevent “stuck” animations
   }, []);
 
   return (
-
-
-    <Image
-    ref={lottieRef}
-    src="/images/laptoprmbg.png" alt="laptop" className={styles.heroAnimation} width={410} height={410} ></Image>
-    // <lottie-player
-    //   ref={lottieRef}
-    //   src="/lotties/growth.json"
-    //   background="transparent"
-    //   speed="1"
-    //   className={styles.heroAnimation}
-    //   loop
-    //   autoplay
-    // ></lottie-player>
+    <div ref={containerRef}>
+      <Image
+        src="/images/laptoprmbg.png"
+        alt="laptop"
+        className={styles.heroAnimation}
+        width={410}
+        height={410}
+      />
+    </div>
   );
 }

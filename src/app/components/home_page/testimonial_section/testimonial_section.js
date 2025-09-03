@@ -54,22 +54,29 @@ export default function TestimonialsSection() {
 ];
 
 
-  useEffect(() => {
-    if (sectionRef.current) {
-      gsap.from(sectionRef.current.querySelectorAll(`.${styles.testimonialCard}`), {
+useEffect(() => {
+    if (!sectionRef.current) return;
+
+    const ctx = gsap.context(() => {
+      const cards = sectionRef.current.querySelectorAll(`.${styles.testimonialCard}`);
+      gsap.from(cards, {
         opacity: 0,
-        y: 0,
+        y: 50,
         duration: 1,
         stagger: 0.3,
         ease: "power3.out",
         scrollTrigger: {
           trigger: sectionRef.current,
-          start: "top 80%", // jab section 80% viewport me aaye
+          start: "top 80%",
         },
       });
-    }
-  }, []);
+    }, sectionRef);
 
+    return () => {
+      ctx.revert(); // cleanup
+      ScrollTrigger.getAll().forEach(st => st.kill());
+    };
+  }, []);
   return (
     <div className={styles.testimonialsSection} ref={sectionRef}>
       <h2 className={styles.testimonialHeading}>What Sellers Say About Us</h2>
@@ -84,7 +91,9 @@ export default function TestimonialsSection() {
         className={styles.testimonialSwiper}
       >
         {testimonials.map((t, i) => (
-          <SwiperSlide key={i}>
+          <SwiperSlide key={i}
+          
+          >
             <div className={styles.testimonialCard}>
               <Image
                 src={t.image}

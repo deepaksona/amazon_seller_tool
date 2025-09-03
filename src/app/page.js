@@ -3,7 +3,6 @@
 import { useEffect, useRef } from "react";
 import Image from "next/image";
 import styles from "./page.module.css";
-
 import gsap from "gsap";
 import Navbar from "./components/home_page/hero_section/navbar";
 import HeroSection from "./components/home_page/hero_section/hero_section";
@@ -24,9 +23,7 @@ export default function Home() {
       <div className={styles.heroSection}>
         <HeroSection />
         <HeroAnimation />
-
       </div>
-
       <Howitswork/>
       <FeatureSection/>
       <SmartWaySection/>

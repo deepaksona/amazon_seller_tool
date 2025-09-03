@@ -1,0 +1,126 @@
+
+
+  .footer {
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.058), #61a3e1), url("/images/testbg2.png");
+    background-size: contain;
+    color: #e2e8f0;
+    padding: 60px 20px 30px;
+
+    .footerContainer {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .footerBrand {
+
+      
+      .footerlogo {
+        height: 40px;
+        width: 200px;
+        background-image: url("/images/logo.png");
+        background-origin: border-box;
+             
+        background-size: 140px;
+        object-fit: fill;
+        background-position: center;
+        background-color: whitesmoke;
+        background-repeat: no-repeat;
+        border-radius: 50px;
+        color: white;
+
+      }
+
+      p {
+        margin-top: 15px;
+        font-size: 0.95rem;
+        line-height: 1.6;
+        color: white;
+      }
+    }
+
+    .footerLinks {
+      h4 {
+        font-size: 1.1rem;
+        font-weight: 600;
+        margin-bottom: 15px;
+        color: white;
+        font-family: "Cormorant Garamond", serif;
+        font-style: italic;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+          margin-bottom: 10px;
+          font-size: 0.95rem;
+          font-family: "Cormorant Garamond", serif;
+          font-style: italic;
+          color: white;
+
+          cursor: pointer;
+          transition: color 0.3s ease;
+
+          &:hover {
+            color: #ffffff;
+          }
+        }
+      }
+    }
+
+    .footerContact {
+      h4 {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: white;
+        font-family: "Cormorant Garamond", serif;
+        font-style: italic;
+        margin-bottom: 15px;
+      }
+
+      p {
+        margin-bottom: 8px;
+        font-size: 0.95rem;
+        color: white;
+        font-family: "Cormorant Garamond", serif;
+        font-style: italic;
+      }
+    }
+
+    .footerSocials {
+      margin-top: 15px;
+      display: flex;
+      gap: 12px;
+
+
+      a {
+        color: white;
+        transition: color 0.3s ease;
+
+        &:hover {
+          color: #ffffff;
+        }
+      }
+    }
+
+    .footerBottom {
+      margin-top: 40px;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      padding-top: 20px;
+      text-align: center;
+
+
+      p {
+        font-size: 1.0rem;
+        color: white;
+        font-weight: 600;
+        filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.191));
+        font-family: "Cormorant Garamond", serif;
+        font-style: italic;
+      }
+    }
+  }

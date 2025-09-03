@@ -4,7 +4,6 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import styles from "../../../page.module.css";
-import Image from "next/image";
 
 export default function WhyChooseUs() {
   const containerRef = useRef(null);
@@ -14,77 +13,6 @@ export default function WhyChooseUs() {
   const conclusionRef = useRef(null);
   const lottieRef = useRef(null);
 
-  useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
-    import("@lottiefiles/lottie-player");
-
-    if (headingRef.current) {
-      gsap.from(headingRef.current, {
-        opacity: 0,
-        y: -40,
-        duration: 1,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: headingRef.current,
-          start: "top 85%",
-        },
-      });
-    }
-
-    if (detailsRef.current) {
-      gsap.from(detailsRef.current, {
-        opacity: 0,
-        x: -50,
-        duration: 1,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: detailsRef.current,
-          start: "top 85%",
-        },
-      });
-    }
-
-    if (listItemsRef.current.length > 0) {
-      gsap.from(listItemsRef.current, {
-        opacity: 0,
-        x: -30,
-        duration: 0.8,
-        stagger: 0.2, // ek ek karke animate hoga
-        ease: "power2.out",
-        scrollTrigger: {
-          trigger: listItemsRef.current[0],
-          start: "top 90%",
-        },
-      });
-    }
-
-    if (conclusionRef.current) {
-      gsap.from(conclusionRef.current, {
-        opacity: 0,
-        y: 30,
-        duration: 1,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: conclusionRef.current,
-          start: "top 90%",
-        },
-      });
-    }
-
-    if (lottieRef.current) {
-      gsap.from(lottieRef.current, {
-        opacity: 0,
-        x: 60,
-        duration: 1,
-        ease: "power3.out",
-        scrollTrigger: {
-          trigger: lottieRef.current,
-          start: "top 85%",
-        },
-      });
-    }
-  }, []);
-
   const points = [
     { title: "Real-time sales & inventory tracking", desc: "no more manual updates" },
     { title: "GST-ready reports & invoices", desc: "stay compliant without extra effort" },
@@ -92,15 +20,83 @@ export default function WhyChooseUs() {
     { title: "Local support", desc: "quick help on WhatsApp & phone in Hindi/English" },
   ];
 
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    import("@lottiefiles/lottie-player");
+
+    const ctx = gsap.context(() => {
+      // Heading
+      if (headingRef.current) {
+        gsap.from(headingRef.current, {
+          opacity: 0,
+          y: -40,
+          duration: 1,
+          ease: "power3.out",
+          scrollTrigger: { trigger: headingRef.current, start: "top 85%" },
+        });
+      }
+
+      // Details
+      if (detailsRef.current) {
+        gsap.from(detailsRef.current, {
+          opacity: 0,
+          x: -50,
+          duration: 1,
+          ease: "power3.out",
+          scrollTrigger: { trigger: detailsRef.current, start: "top 85%" },
+        });
+      }
+
+      // List items
+      if (listItemsRef.current.length > 0) {
+        gsap.from(listItemsRef.current.filter(Boolean), { // ✅ filter nulls
+          opacity: 0,
+          x: -30,
+          duration: 0.8,
+          stagger: 0.2,
+          ease: "power2.out",
+          scrollTrigger: { trigger: listItemsRef.current[0], start: "top 90%" },
+        });
+      }
+
+      // Conclusion
+      if (conclusionRef.current) {
+        gsap.from(conclusionRef.current, {
+          opacity: 0,
+          y: 30,
+          duration: 1,
+          ease: "power3.out",
+          scrollTrigger: { trigger: conclusionRef.current, start: "top 90%" },
+        });
+      }
+
+      // Lottie (animate wrapper)
+      if (lottieRef.current) {
+        gsap.from(lottieRef.current, {
+          opacity: 0,
+          x: 60,
+          duration: 1,
+          ease: "power3.out",
+          scrollTrigger: { trigger: lottieRef.current, start: "top 85%" },
+        });
+      }
+    }, containerRef);
+
+    return () => {
+      ctx.revert(); // ✅ cleanup all GSAP animations
+      ScrollTrigger.getAll().forEach(st => st.kill()); // ✅ cleanup ScrollTriggers
+    };
+  }, []);
+
   return (
     <div className={styles.whyChooseUs} ref={containerRef}>
       <h2 className={styles.wchHeading} ref={headingRef}>Why Choose Us</h2>
+
       <div className={styles.wchDetailAndAnimation}>
         <div className={styles.wchDetails}>
           <div className={styles.wchDetailsText} ref={detailsRef}>
             Managing your Amazon business with Excel or manual tracking is slow
-            and error-prone. Our platform is built{" "}
-            <b>exclusively for global Amazon sellers</b> to make things simple:
+            and error-prone. Our platform is built <b>exclusively for global Amazon sellers</b> to make things simple:
           </div>
 
           <ul className={styles.wchList}>
@@ -120,18 +116,17 @@ export default function WhyChooseUs() {
           </p>
         </div>
 
-        {/* ✅ Animate lottie */}
-
-        <div className={styles.wchAnimation}></div>
-        {/* <lottie-player
-          ref={lottieRef}
-          src="/lotties/sales.json"
-          background="transparent"
-          speed="1"
-          className={styles.wchAnimation}
-          loop
-          autoplay
-        ></lottie-player> */}
+        {/* Animate wrapper for Lottie */}
+        <div className={styles.wchAnimation} ref={lottieRef}>
+          {/* <lottie-player
+            src="/lotties/sales.json"
+            background="transparent"
+            speed="1"
+            className={styles.wchAnimation}
+            loop
+            autoplay
+          ></lottie-player> */}
+        </div>
       </div>
     </div>
   );

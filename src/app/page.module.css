@@ -220,7 +220,8 @@
     .heroAnimation {
       /* height: 600px;
       width: 600px; */
-      height: 410px;
+      box-sizing: border-box;
+      height: 350px;
       width: auto;
       filter: drop-shadow(2px 2px 5px rgba(255, 255, 255, 0.227));
       margin-bottom: 80px;
@@ -235,6 +236,7 @@
   }
 
   .workSection {
+    box-sizing: border-box;
     height: 30vh;
     justify-content: center;
     width: auto;
@@ -254,7 +256,7 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-        width: 250px;
+        width: 220px;
         gap: 20px;
 
 
@@ -268,7 +270,6 @@
           font-style: italic;
         }
       }
-
       .separator {
         width: 1px;
         height: 80px;
@@ -387,6 +388,7 @@
       line-height: 1.6;
       font-family: 'Cormorant Garamond';
       font-style: italic;
+     
     }
 
     /* Timeline wrapper */
@@ -468,22 +470,34 @@
               line-height: 1.5;
               font-family: 'Cormorant Garamond';
               font-style: italic;
-              text-align: right;
+              text-align: justify;
 
               &:nth-child(even) {
-                text-align: left;
+                text-align: justify;
               }
 
             }
           }
 
-          .benefitIcon {
+
+          .imageWrapper {
+  position: relative;
+  width: 300px; /* or any desired size */
+  height: 300px;
+
+}
+.benefitIcon {
+    border-radius: 30px;
+  object-fit: cover; /* ensures image scales nicely */
+}
+
+          /* .benefitIcon {
             margin-bottom: 12px;
             height: 330px;
             width: 330px;
             object-fit: cover;
             border-radius: 20px;
-          }
+          } */
 
         }
       }
@@ -650,6 +664,30 @@
     font-style: italic;
   }
 
+  .testimonialSwiper {
+    padding-bottom: 50px; /* extra space for dots */
+
+    :global(.swiper-pagination) {
+      bottom: 15px !important;
+    }
+
+    :global(.swiper-pagination-bullet) {
+      width: 12px !important;
+      height: 12px !important;
+      background-color: #ffffff !important;
+      opacity: 0.7 !important;
+      border-radius: 50% !important;
+      margin: 0 6px !important;
+      transition: all 0.3s ease !important;
+    }
+
+    :global(.swiper-pagination-bullet-active) {
+      background-color: #1d4ed8 !important;
+      opacity: 1 !important;
+      transform: scale(1.2) !important;
+    }
+  }
+
   .testimonialCard {
     max-width: 650px;
     margin: 40px auto;
@@ -677,7 +715,6 @@
     .testimonialFeedback {
       font-size: 1.35rem;
       color: #374151;
-     
       margin-bottom: 8px;
       font-family: "Cormorant Garamond", serif;
       font-style: italic;
@@ -690,7 +727,6 @@
       font-style: italic;
       font-weight: 600;
       color: #111827;
-      
     }
 
     .testimonialRole {
@@ -698,28 +734,6 @@
       font-style: italic;
       font-size: 0.9rem;
       color: #6b7280;
-    }
-
-    .testimonialSwiper {
-      :global(.swiper-pagination) {
-        bottom: 15px !important;
-      }
-
-      :global(.swiper-pagination-bullet) {
-        width: 12px !important;
-        height: 12px !important;
-        background-color: #ffffff !important;
-        opacity: 0.7 !important;
-        border-radius: 50% !important;
-        margin: 0 6px !important;
-        transition: all 0.3s ease !important;
-      }
-
-      :global(.swiper-pagination-bullet-active) {
-        background-color: #1d4ed8 !important;
-        opacity: 1 !important;
-        transform: scale(1.2) !important;
-      }
     }
   }
 }
