@@ -1,14 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap');
 
-:root {
-  --bg: #0b122000;
-  --card: #ffffff;
-  --muted: #94a3b8;
-  --text: #e5e7eb;
-  --brand: #4f46e5;
-  --brand-2: #22d3ee;
-  --ring: rgba(79, 70, 229, 0.35);
-}
 
 .aboutPage{
  background-image: linear-gradient(to bottom, #0000ff08, #61a3e1),
