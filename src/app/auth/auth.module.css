@@ -1,0 +1,252 @@
+
+.authPage {
+  display: flex;
+  height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: white;
+  overflow: hidden;
+}
+
+.authFormSection {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+ background-image: 
+    linear-gradient(to bottom, rgba(0, 0, 255, 0.578), rgba(97, 163, 225, 0.888)),
+    url("/images/testbg1.png"), url("/images/bgforsmartway.png");
+
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: center;
+
+   
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+
+.formBox {
+  width: 80%;
+  max-width: 420px;
+  background: rgba(255, 255, 255, 0.192);
+  padding: 30px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  backdrop-filter: blur(10px);
+
+}
+
+.logoBox {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  margin-bottom: 20px;
+  background-color: white;
+  border-radius: 50px;
+  
+}
+
+.logo {
+  width: 150px;
+  height: 50px;
+  object-fit: contain;
+}
+.formBox h2 {
+  font-size: 28px;
+  margin-bottom: 25px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+}
+
+.formGroup {
+  margin-bottom: 15px;
+}
+
+.formGroup input {
+  width: 300px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border 0.3s;
+}
+
+.formGroup input:focus {
+  border-color: #2563eb;
+  outline: none;
+}
+
+.btnPrimary {
+  width: 100%;
+  padding: 14px;
+  background: #6ba32d;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btnPrimary:hover {
+  background: #5c8b26;
+}
+
+.googleBtn {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 1px solid #ddd;
+  padding: 12px;
+  border-radius: 8px;
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: white;
+  transition: background 0.3s;
+}
+
+.googleBtn img {
+  width: 20px;
+  height: 20px;
+}
+
+.googleBtn:hover {
+  background: #f9f9f9;
+}
+
+.toggleText {
+  margin-top: 20px;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+}
+
+.toggleText button {
+  background: none;
+  border: none;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+   font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+  cursor: pointer;
+}
+
+.toggleText button:hover {
+     color: white;
+  text-decoration: underline;
+}
+
+/* Right Section */
+.authInfoSection {
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  overflow: hidden;
+}
+
+.videoBg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.overlayContent {
+  position: relative;
+  z-index: 2;
+  max-width: 500px;
+  background: rgba(3, 3, 3, 0.27);
+  padding: 30px;
+  border-radius: 16px;
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+  backdrop-filter: blur(6px);
+}
+
+.overlayContent h1 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
+
+.overlayContent p {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.overlayContent ul {
+  text-align: left;
+  font-size: 18px;
+  line-height: 1.6;
+  list-style-type:none;
+}
+
+/* Responsive */@media (max-width: 900px) {
+  .authPage {
+    flex-direction: column;
+    height: 100vh; /* full screen */
+    position: relative;
+  }
+
+  /* Video ko full screen background banado */
+  .authInfoSection {
+    position: absolute;
+    inset: 0; /* full cover */
+    flex: none;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  .videoBg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* Login form ko center overlay kar do */
+  .authFormSection {
+    position: relative;
+    z-index: 2; /* video ke upar */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none; /* background hatado mobile pe */
+    box-shadow: none;
+  }
+
+  .formBox {
+    width: 90%;
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    padding: 25px;
+    border-radius: 16px;
+  }
+
+  /* Overlay content (grow your business wala) mobile pe hatado */
+  .overlayContent {
+    display: none;
+  }
+}

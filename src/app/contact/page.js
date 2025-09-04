@@ -286,7 +286,7 @@ const Contact = () => {
               {faqData.map((faq, index) => (
                 <div key={index} className={styles.faqCard}>
                   <div className={styles.faqIcon}>
-                    <i className={faq.icon}></i>
+                    <i className={faq.icon}>{index + 1}</i>
                   </div>
                   <div className={styles.faqContent}>
                     <h3>{faq.question}</h3>

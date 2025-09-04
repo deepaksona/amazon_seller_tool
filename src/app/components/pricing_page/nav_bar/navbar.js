@@ -18,8 +18,8 @@ export default function Navbar() {
       <div className={styles.navRowOne}>
  <div className={styles.logo}></div>
  <div className={styles.wrapbutton}>
-<div className={styles.login}>Login</div>
-        <div className={styles.getStart}>Get Started</div>
+<Link href={"/auth"} className={styles.login}>Login</Link>
+        <Link href={"/auth"} className={styles.getStart}>Get Started</Link>
  </div>
  
 
