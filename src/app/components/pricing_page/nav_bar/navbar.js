@@ -19,7 +19,7 @@ export default function Navbar() {
  <div className={styles.logo}></div>
  <div className={styles.wrapbutton}>
 <Link href={"/auth"} className={styles.login}>Login</Link>
-        <Link href={"/auth"} className={styles.getStart}>Get Started</Link>
+        <Link href={"/dashboard"} className={styles.getStart}>Get Started</Link>
  </div>
  
 
